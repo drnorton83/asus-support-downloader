@@ -15,7 +15,8 @@ import {
   Button,
 } from '@mui/material';
 import { Brightness4, Brightness7 } from '@mui/icons-material';
-import { useApp } from '../context/AppContext';
+
+import {useApp} from "../context/UseApp.jsx";
 
 export default function Layout() {
   const [darkMode, setDarkMode] = useState(true);
@@ -54,7 +55,7 @@ export default function Layout() {
     }
   };
 
-  const handleKeyPress = (e) => {
+  const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       handleFetch();
     }
@@ -87,7 +88,7 @@ export default function Layout() {
               label="Model Name"
               value={model}
               onChange={(e) => setModel(e.target.value)}
-              onKeyPress={handleKeyPress}
+              onKeyDown={handleKeyDown}
               placeholder="e.g., ROG STRIX X870E-E GAMING WIFI"
             />
             <Button

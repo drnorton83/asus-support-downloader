@@ -4,7 +4,8 @@ import axios from 'axios';
 import FilterControls from '../components/FilterControls';
 import FileTable from '../components/FileTable';
 import LoadingSkeleton from '../components/LoadingSkeleton';
-import { useApp } from '../context/AppContext';
+
+import {useApp} from "../context/UseApp.jsx";
 
 export default function BiosView() {
   const { model, shouldFetch, biosData, setBiosData } = useApp();

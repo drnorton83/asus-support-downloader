@@ -28,7 +28,7 @@ export default function FileRow({ file, categoryName, emphasizeTitle = false }) 
     return dateStr;
   };
 
-  const handleDownload = (url, fileName) => {
+  const handleDownload = url => {
     if (url) {
       // Strip the 'model' query parameter if present
       let cleanUrl = url;
@@ -110,10 +110,7 @@ export default function FileRow({ file, categoryName, emphasizeTitle = false }) 
             <IconButton
               color="primary"
               onClick={() =>
-                handleDownload(
-                  file.DownloadUrl?.Global,
-                  file.Id?.split('/').pop()
-                )
+                handleDownload(file.DownloadUrl?.Global)
               }
               disabled={!file.DownloadUrl?.Global}
             >
@@ -152,10 +149,7 @@ export default function FileRow({ file, categoryName, emphasizeTitle = false }) 
                   variant="contained"
                   startIcon={<Download />}
                   onClick={() =>
-                    handleDownload(
-                      file.DownloadUrl?.Global,
-                      file.Id?.split('/').pop()
-                    )
+                    handleDownload(file.DownloadUrl?.Global)
                   }
                   disabled={!file.DownloadUrl?.Global}
                 >

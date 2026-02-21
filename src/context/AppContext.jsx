@@ -1,6 +1,5 @@
-import { createContext, useContext, useState, useCallback } from 'react';
-
-const AppContext = createContext();
+import {useCallback, useState} from 'react';
+import {AppContext} from './UseApp.jsx';
 
 export function AppProvider({ children }) {
   const [model, setModel] = useState('ROG STRIX X870E-E GAMING WIFI');
@@ -58,12 +57,4 @@ export function AppProvider({ children }) {
       {children}
     </AppContext.Provider>
   );
-}
-
-export function useApp() {
-  const context = useContext(AppContext);
-  if (!context) {
-    throw new Error('useApp must be used within AppProvider');
-  }
-  return context;
 }
