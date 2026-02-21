@@ -4,7 +4,7 @@ A web application that allows you to download BIOS updates, drivers, and manuals
 
 ## ⚠️ Disclaimer
 
-**THIS SOFTWARE IS PROVIDED "AS-IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.**
+**THIS SOFTWARE IS PROVIDED "AS-IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. ALSO IT'S VIBECODED AI SLOP.**
 
 - The author is NOT responsible for any damage to your hardware or software that may result from using this application or downloading files through it
 - Use at your own risk
