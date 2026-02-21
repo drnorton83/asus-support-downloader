@@ -13,7 +13,7 @@ A web application that allows you to download BIOS updates, drivers, and manuals
 
 ## Background
 
-This application was created to help users in countries like Germany access ASUS support downloads. Due to a court ruling in a patent dispute with Nokia, ASUS was forced to block access to their support download pages in certain regions. This tool provides an alternative way to access these downloads by querying ASUS APIs directly.
+This application was created to help users in countries like Germany access ASUS support downloads. [Due to a court ruling in a patent dispute with Nokia, ASUS was forced to block access to their support download pages in certain regions](https://press.asus.com/news/statements/public-statement-to-patent-dispute-with-nokia). This tool provides an alternative way to access these downloads by querying ASUS APIs directly.
 
 ## Features
 
