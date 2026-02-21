@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import BiosView from './views/BiosView';
 import DriversView from './views/DriversView';
 import ManualsView from './views/ManualsView';
+import './App.css';
 
 function App() {
   return (
